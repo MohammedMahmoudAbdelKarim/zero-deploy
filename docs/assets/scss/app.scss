@@ -1,0 +1,94 @@
+// Variables
+@import "./theme/variables";
+// Mixins
+@import "./theme/mixins";
+
+// Fonts
+@import "./theme/fonts.scss";
+
+// Bootstrap Theme
+@import "./theme/bootstrapTheme.scss";
+
+// Material Theme
+@import "./theme/materialTheme.scss";
+
+// Header Component
+@import "./header.scss";
+
+// Footer Component
+@import "./footer.scss";
+
+// Carousel Component
+@import "./carousel.scss";
+
+// Products Component
+@import "./products.scss";
+
+// DownloadAppComponent
+@import "./downloadApp.scss";
+
+// Counters
+@import "./counters.scss";
+
+// Splash
+@import "./splash.scss";
+
+// Login
+@import "./login.scss";
+
+// Register
+@import "./register.scss";
+
+// Cart
+@import "./cart.scss";
+
+// Profile
+@import "./profile.scss";
+
+// Global Styles
+body {
+  background-color: $darker;
+  font-size: 14px;
+}
+
+// hiding arrows from number inputs
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// buttons
+.btn-skew-secondary {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  background-image: $secondary-gradient-right;
+
+  &:hover {
+    background-image: $secondary-gradient-left;
+  }
+}
+
+.btn-skew-primary {
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+  background-image: $primary-gradient-right;
+
+  &:hover {
+    background-image: $primary-gradient-left;
+  }
+}
+
+button:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+  background: $diabled-gradient-right;
+
+  &:hover {
+    background: $diabled-gradient-left;
+  }
+}

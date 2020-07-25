@@ -1,0 +1,10 @@
+$primaryFont: "RussoOne";
+
+@font-face {
+  font-family: $primaryFont;
+  src: url("./assets/fonts/RussoOne.ttf") format("opentype");
+}
+
+.font-primary {
+  font-family: $primaryFont;
+}

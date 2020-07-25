@@ -1,0 +1,15 @@
+// extends
+
+%title_with_line {
+  color: white;
+
+  &::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 175px;
+    padding-top: 20px;
+    border-bottom: 15px solid #edab61;
+    transform: skewX(-25deg);
+  }
+}

@@ -1,0 +1,25 @@
+#register {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .login-card {
+    form {
+      input {
+        border-radius: 0;
+        color: #d1d5d8 !important;
+        font-weight: bold;
+      }
+
+      ::placeholder {
+        color: #d1d5d8;
+        font-weight: bold;
+      }
+    }
+
+    button {
+      background: $primary-gradient-left;
+    }
+  }
+}

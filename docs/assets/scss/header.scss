@@ -1,0 +1,80 @@
+#mainHeader {
+  // Header Body
+  height: 90px;
+  display: flex;
+  align-items: center;
+  z-index: 1020;
+
+  // Navigation Menu
+  .nav-item {
+    padding: 0.3rem 2rem;
+    margin: 0.4rem;
+    display: flex;
+    align-items: center;
+    transform: skewX(-20deg);
+    cursor: pointer;
+
+    &:hover {
+      background-image: $secondary-gradient-right;
+
+      a {
+        color: $darker;
+      }
+    }
+
+    a {
+      color: $white;
+      transform: skewX(20deg);
+      font-size: 1.5rem;
+      padding: 0;
+    }
+  }
+
+  // Icons
+  .nav-icon {
+    position: relative;
+
+    .badge {
+      position: absolute;
+      left: 60%;
+      top: 10%;
+      font-size: 0.8rem;
+    }
+
+    a {
+      color: $white;
+      font-size: 1.5rem;
+      padding: 0;
+      margin: 0 0.4rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary2;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+
+  // Drop Down List
+  .dropdown-menu {
+    cursor: pointer;
+    left: -50% !important;
+  }
+
+  // Active for nav items
+  .active {
+    a {
+      color: $darker;
+      font-weight: bold;
+    }
+
+    background-image: $secondary-gradient-right;
+  }
+
+  // Active for icons
+  .icon-active {
+    a {
+      color: $secondary2 !important;
+    }
+  }
+}
